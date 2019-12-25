@@ -120,6 +120,10 @@
               "devServerTarget": "angular8-meanstack-angular-material:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }

@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "angular8-meanstack-angular-material",
+      "public": "dist/angular8-meanstack-angular-material",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

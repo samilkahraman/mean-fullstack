@@ -1,0 +1,59 @@
+[debug] [2019-12-25T17:25:32.697Z] ----------------------------------------------------------------------
+[debug] [2019-12-25T17:25:32.698Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2019-12-25T17:25:32.699Z] CLI Version:   7.11.0
+[debug] [2019-12-25T17:25:32.699Z] Platform:      linux
+[debug] [2019-12-25T17:25:32.699Z] Node Version:  v13.1.0
+[debug] [2019-12-25T17:25:32.699Z] Time:          Wed Dec 25 2019 20:25:32 GMT+0300 (GMT+03:00)
+[debug] [2019-12-25T17:25:32.699Z] ----------------------------------------------------------------------
+[debug] [2019-12-25T17:25:32.699Z] 
+[debug] [2019-12-25T17:25:32.704Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-12-25T17:25:32.705Z] > authorizing via signed-in user
+[debug] [2019-12-25T17:25:32.705Z] [iam] checking project ahsaplarcom-1e215 for permissions ["firebase.projects.get"]
+[debug] [2019-12-25T17:25:32.706Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-12-25T17:25:32.706Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-12-25T17:25:32.935Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-25T17:25:32.944Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ahsaplarcom-1e215:testIamPermissions  
+
+[debug] [2019-12-25T17:25:34.043Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-25T17:25:34.044Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ahsaplarcom-1e215  
+ 
+[debug] [2019-12-25T17:25:34.425Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/samil/Desktop/mean/angular8-meanstack-angular-material'...
+[info] 
+[debug] [2019-12-25T17:25:34.436Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ahsaplarcom-1e215/webApps/-/config  
+ 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "13"
+[info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2019-12-25T17:25:35.059Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "/home/samil/Desktop/mean/angular8-meanstack-angular-material/functions" for Cloud Functions...
+[debug] [2019-12-25T17:25:35.081Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2019-12-25T17:25:35.082Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2019-12-25T17:25:35.082Z] [worker-pool] submitWork(triggerId=)
+[debug] [2019-12-25T17:25:35.082Z] [worker-~diagnostic~-eb183bbb-5329-451c-9c73-a1b0ef651d90]: Assigning socketPath: /tmp/fire_emu_14938.sock
+[debug] [2019-12-25T17:25:35.083Z] [worker-~diagnostic~-eb183bbb-5329-451c-9c73-a1b0ef651d90]: BUSY
+[info] i  hosting[angular8-meanstack-angular-material]: Serving hosting files from: dist/angular8-meanstack-angular-material
+[info] ✔  hosting[angular8-meanstack-angular-material]: Local server: http://localhost:5000
+[debug] [2019-12-25T17:25:35.279Z] [runtime-status] [14938] Functions runtime initialized. {"cwd":"/home/samil/Desktop/mean/angular8-meanstack-angular-material/functions","node_version":"13.1.0"}
+[debug] [2019-12-25T17:25:35.281Z] [runtime-status] [14938] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-25T17:25:35.284Z] [runtime-status] [14938] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/home/samil/Desktop/mean/angular8-meanstack-angular-material/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-25T17:25:35.285Z] [runtime-status] [14938] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/samil/Desktop/mean/angular8-meanstack-angular-material/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-25T17:25:35.286Z] [runtime-status] [14938] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/samil/Desktop/mean/angular8-meanstack-angular-material/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  Error: Cannot find module 'mongoose'
+Require stack:
+- /home/samil/Desktop/mean/angular8-meanstack-angular-material/functions/index.js
+- /usr/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:892:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:785:27)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/home/samil/Desktop/mean/angular8-meanstack-angular-material/functions/index.js:5:14)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-12-25T17:25:35.395Z] [worker-~diagnostic~-eb183bbb-5329-451c-9c73-a1b0ef651d90]: exited
+[debug] [2019-12-25T17:25:35.395Z] [worker-~diagnostic~-eb183bbb-5329-451c-9c73-a1b0ef651d90]: FINISHED

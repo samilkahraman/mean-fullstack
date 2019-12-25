@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ahsaplarcom-1e215": {
+      "hosting": {
+        "angular8-meanstack-angular-material": [
+          "ahsaplarcom-1e215"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ahsaplarcom-1e215"
+  }
+}

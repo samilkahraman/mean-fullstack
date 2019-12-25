@@ -29,7 +29,7 @@
           <!-- Section -->
           <mat-form-field>
             <mat-label>Section</mat-label>
-            <mat-select [(value)]="selected" formControlName="section">
+            <mat-select  formControlName="section">
               <mat-option [value]="sectioinArray" *ngFor="let sectioinArray of SectioinArray">{{sectioinArray}}
               </mat-option>
             </mat-select>
