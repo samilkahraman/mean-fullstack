@@ -8,16 +8,18 @@ import { StudentsListComponent } from './components/students-list/students-list.
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ApiService } from './shared/api.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { Api2Service } from './shared/api2.service';
 
 import { AngularMaterialModule } from './material.module';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { AgacEkleComponent } from './components/agac-ekle/agac-ekle.component';
 @NgModule({
   declarations: [
     AppComponent,
     AddStudentComponent,
     EditStudentComponent,
-    StudentsListComponent
+    StudentsListComponent,
+    AgacEkleComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     ReactiveFormsModule,
     FormsModule
   ],
-  providers: [ApiService],
+  providers: [ApiService,Api2Service],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
